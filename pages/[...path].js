@@ -7,7 +7,7 @@ export { getStaticProps }
 
 export async function getStaticPaths() {
 	// Fetch links from Webflow sitemap
-	const sitemapLink = "https://weave-bento-box.webflow.io/" + `/sitemap.xml`
+	const sitemapLink = "https://weave-bento-box.webflow.io" + `/sitemap.xml`
 	const links = await GetSitemapLinks(sitemapLink).catch(err => {
 		console.error(err)
 	})
